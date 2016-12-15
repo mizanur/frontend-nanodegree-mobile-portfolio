@@ -1,5 +1,3 @@
-
-
 #Course Note
 
 ## Website Performance Optimization portfolio project
