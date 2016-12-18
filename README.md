@@ -9,6 +9,9 @@
     * name: gulp-image-optimization
     * url: https://www.npmjs.com/package/gulp-image-optimization
 
+    * name: gulp-imagemin
+    * url: https://www.npmjs.com/package/gulp-imagemin
+
   ## Minify CSS
     * name: gulp-clean-css
     * url: https://github.com/scniro/gulp-clean-css

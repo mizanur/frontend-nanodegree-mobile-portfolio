@@ -10,7 +10,7 @@ gulp.task('minify', function() {
 });
 
 var imageop = require('gulp-image-optimization');
- 
+/*
 gulp.task('images', function(cb) {
     gulp.src(['src/img/*.png','src/img/*.jpg','src/img/*.gif','src/img/*.jpeg']).pipe(imageop({
         optimizationLevel: 5,
@@ -25,7 +25,7 @@ gulp.task('images-views', function(cb) {
         progressive: true,
         interlaced: true
     })).pipe(gulp.dest('dist/views/images')).on('end', cb).on('error', cb);
-});
+});*/
 
 var cleanCSS = require('gulp-clean-css');
 
@@ -69,6 +69,21 @@ gulp.task('compress-js-views', function() {
     }))
     .pipe(gulp.dest('dist/views/js'))
 });
+
+
+const imagemin = require('gulp-imagemin');
+ 
+gulp.task('images', () =>
+    gulp.src('src/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/img'))
+);
+
+gulp.task('images-views', () =>
+    gulp.src('src/views/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/views/images'))
+);
 
 gulp.task('run', ['minify', 'images', 'images-views', 'minify-css', 'compress-js', 'compress-js-views']);
 
