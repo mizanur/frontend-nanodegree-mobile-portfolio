@@ -1,6 +1,7 @@
 # Introduction
   * Course: Frontend Nano Degree - Udacity
   * Candidate: Mizanur R. Chowdhury
+  * Google PageSpeed Score 92/100: See: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fmizanur.github.io%2Ffrontend-nanodegree-mobile-portfolio%2Fdist%2F&tab=mobile
 
 # Set Up
 
