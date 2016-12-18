@@ -1,7 +1,32 @@
+# Introduction
+  * Course: Frontend Nano Degree - Udacity
+  * Candidate: Mizanur R. Chowdhury
+
 # Set Up
 
-  ## Install Node
-  ## 
+  ## 1. Download Repository
+    * Download from here: https://github.com/mizanur/frontend-nanodegree-mobile-portfolio
+  
+  ## 2. Install npm
+    * Instructions can be found here: https://docs.npmjs.com/cli/install
+    * run $ npm install --only=dev
+  
+  ## 3. Install Gulp 
+    * Instructions can be found here: https://www.npmjs.com/package/gulp-install
+
+  ## 4. Replace TinyPNG API Key
+    * Obtain API key from TinyPNG: https://tinypng.com/developers
+    * Open gulpfile.js
+    * Replace YOUR_API_KEY with your TinyPNG API Key
+    * run $ gulp run
+
+  ## 5. Run Gulp
+    * Navigate to downloaded directory
+    * run $ gulp run
+
+  ## 6. Run index.html
+    * Navigate to downloaded dist directory 
+    * Open index.html
 
 # Gulp Plugins Directory
   
