@@ -13,6 +13,10 @@
     * name: gulp-clean-css
     * url: https://github.com/scniro/gulp-clean-css
 
+  ## Minify JS
+    * name: gulp-minify
+    * url: https://www.npmjs.com/package/gulp-minify
+
 
 #Course Note
 

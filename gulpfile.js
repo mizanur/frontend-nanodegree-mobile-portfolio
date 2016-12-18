@@ -41,4 +41,38 @@ gulp.task('minify-css-views', function() {
     .pipe(gulp.dest('dist/views/css'));
 });
 
-gulp.task('run', ['minify', 'images', 'images-views', 'minify-css']);
+
+var minify = require('gulp-minify');
+ 
+gulp.task('compress-js', function() {
+  gulp.src('src/js/*.js')
+    .pipe(minify({
+        ext:{
+            src:'-debug.js',
+            min:'.js'
+        },
+        exclude: ['tasks'],
+        ignoreFiles: ['.combo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('dist/js'))
+});
+
+gulp.task('compress-js-views', function() {
+  gulp.src('src/views/js/*.js')
+    .pipe(minify({
+        ext:{
+            src:'-debug.js',
+            min:'.js'
+        },
+        exclude: ['tasks'],
+        ignoreFiles: ['.combo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('dist/views/js'))
+});
+
+gulp.task('run', ['minify', 'images', 'images-views', 'minify-css', 'compress-js', 'compress-js-views']);
+
+
+
+
+
