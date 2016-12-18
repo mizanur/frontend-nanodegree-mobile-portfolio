@@ -109,7 +109,7 @@ gulp.task('tinypng-views', function () {
         .pipe(gulp.dest('dist/views/images'));
 });
 
-gulp.task('run', ['minify-html', 'minify-html-views', 'minify-css', 'compress-js', 'compress-js-views', 'tinypng-views', 'tinypng']);
+gulp.task('run', ['minify-html', 'minify-html-views', 'minify-css', 'minify-css-views', 'compress-js', 'compress-js-views', 'tinypng-views', 'tinypng']);
 
 
 
