@@ -85,7 +85,7 @@ gulp.task('images-views', () =>
         .pipe(gulp.dest('dist/views/images'))
 );
 
-gulp.task('run', ['minify', 'images', 'images-views', 'minify-css', 'compress-js', 'compress-js-views']);
+gulp.task('run', ['minify', 'minify-css', 'compress-js', 'compress-js-views']);
 
 
 
