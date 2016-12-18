@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
     "gulp-htmlmin": "^3.0.0",
     "gulp-image-optimization": "^0.1.3"
   },

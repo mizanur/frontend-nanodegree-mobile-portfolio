@@ -27,4 +27,18 @@ gulp.task('images-views', function(cb) {
     })).pipe(gulp.dest('dist/views/images')).on('end', cb).on('error', cb);
 });
 
-gulp.task('run', ['minify', 'images', 'images-views']);
+var cleanCSS = require('gulp-clean-css');
+
+gulp.task('minify-css', function() {
+  return gulp.src('src/css/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('minify-css-views', function() {
+  return gulp.src('src/views/css/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist/views/css'));
+});
+
+gulp.task('run', ['minify', 'images', 'images-views', 'minify-css']);

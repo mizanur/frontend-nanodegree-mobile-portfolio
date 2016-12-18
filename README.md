@@ -1,3 +1,19 @@
+
+# Gulp plugins used
+  
+  ## Minify HTML
+    * name: gulp-htmlmin
+    * url: https://github.com/jonschlinkert/gulp-htmlmin
+
+  ## Optimize Images
+    * name: gulp-image-optimization
+    * url: https://www.npmjs.com/package/gulp-image-optimization
+
+  ## Minify CSS
+    * name: gulp-clean-css
+    * url: https://github.com/scniro/gulp-clean-css
+
+
 #Course Note
 
 ## Website Performance Optimization portfolio project
