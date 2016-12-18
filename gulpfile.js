@@ -3,14 +3,15 @@ var gulp = require('gulp');
 
 var htmlmin = require('gulp-htmlmin');
 
-gulp.task('minify', function() {
+gulp.task('minify-html', function() {
   return gulp.src('src/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist'));
 });
 
-var imageop = require('gulp-image-optimization');
 /*
+var imageop = require('gulp-image-optimization');
+
 gulp.task('images', function(cb) {
     gulp.src(['src/img/*.png','src/img/*.jpg','src/img/*.gif','src/img/*.jpeg']).pipe(imageop({
         optimizationLevel: 5,
@@ -102,7 +103,7 @@ gulp.task('tinypng-views', function () {
         .pipe(gulp.dest('dist/views/images'));
 });
 
-gulp.task('run', ['minify', 'minify-css', 'compress-js', 'compress-js-views', 'tinypng-views', 'tinypng']);
+gulp.task('run', ['minify-html', 'minify-css', 'compress-js', 'compress-js-views', 'tinypng-views', 'tinypng']);
 
 
 
