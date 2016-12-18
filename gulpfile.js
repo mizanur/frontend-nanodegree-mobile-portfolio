@@ -9,6 +9,12 @@ gulp.task('minify-html', function() {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('minify-html-views', function() {
+  return gulp.src('src/views/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('dist/views'));
+});
+
 /*
 var imageop = require('gulp-image-optimization');
 
@@ -103,7 +109,7 @@ gulp.task('tinypng-views', function () {
         .pipe(gulp.dest('dist/views/images'));
 });
 
-gulp.task('run', ['minify-html', 'minify-css', 'compress-js', 'compress-js-views', 'tinypng-views', 'tinypng']);
+gulp.task('run', ['minify-html', 'minify-html-views', 'minify-css', 'compress-js', 'compress-js-views', 'tinypng-views', 'tinypng']);
 
 
 
