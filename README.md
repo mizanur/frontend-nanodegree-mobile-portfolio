@@ -1,13 +1,17 @@
+# Set Up
 
-# Gulp plugins used
+  ## Install Node
+  ## 
+
+# Gulp Plugins Directory
   
   ## Minify HTML
     * name: gulp-htmlmin
     * url: https://github.com/jonschlinkert/gulp-htmlmin
 
   ## Optimize Images
-    * name: gulp-image-optimization
-    * url: https://www.npmjs.com/package/gulp-image-optimization
+    * name: gulp-tinypng
+    * url: https://www.npmjs.com/package/gulp-tinypng
 
     * name: gulp-imagemin
     * url: https://www.npmjs.com/package/gulp-imagemin
