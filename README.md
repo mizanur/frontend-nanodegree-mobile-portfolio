@@ -3,52 +3,59 @@
   * Candidate: Mizanur R. Chowdhury
   * Google PageSpeed Score 92/100: See: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fmizanur.github.io%2Ffrontend-nanodegree-mobile-portfolio%2Fdist%2F&tab=mobile
 
+# Opitmizations to views/main.js.
+
+* Element selectors removed from within for loops 
+* changePizzaSizes() : Removed expensive DOM calculations out of for loop 
+* updatePositions() : Reduced iterations in for loop
+* Event handler for DOMContentLoaded optimized
+
 # Set Up
 
-  ## 1. Download Repository
-    * Download from here: https://github.com/mizanur/frontend-nanodegree-mobile-portfolio
+## 1. Download Repository
+* Download from here: https://github.com/mizanur/frontend-nanodegree-mobile-portfolio
   
-  ## 2. Install npm
-    * Instructions can be found here: https://docs.npmjs.com/cli/install
-    * run $ npm install --only=dev
+## 2. Install npm
+* Instructions can be found here: https://docs.npmjs.com/cli/install
+* run $ npm install --only=dev
   
-  ## 3. Install Gulp 
-    * Instructions can be found here: https://www.npmjs.com/package/gulp-install
+## 3. Install Gulp 
+* Instructions can be found here: https://www.npmjs.com/package/gulp-install
 
-  ## 4. Replace TinyPNG API Key
-    * Obtain API key from TinyPNG: https://tinypng.com/developers
-    * Open gulpfile.js
-    * Replace YOUR_API_KEY with your TinyPNG API Key
-    * run $ gulp run
+## 4. Replace TinyPNG API Key
+* Obtain API key from TinyPNG: https://tinypng.com/developers
+* Open gulpfile.js
+* Replace YOUR_API_KEY with your TinyPNG API Key
+* run $ gulp run
 
-  ## 5. Run Gulp
-    * Navigate to downloaded directory
-    * run $ gulp run
+## 5. Run Gulp
+* Navigate to downloaded directory
+* run $ gulp run
 
-  ## 6. Run index.html
-    * Navigate to downloaded dist directory 
-    * Open index.html
+## 6. Run index.html
+* Navigate to downloaded dist directory 
+* Open index.html
 
 # Gulp Plugins Directory
   
-  ## Minify HTML
-    * name: gulp-htmlmin
-    * url: https://github.com/jonschlinkert/gulp-htmlmin
+## Minify HTML
+* name: gulp-htmlmin
+* url: https://github.com/jonschlinkert/gulp-htmlmin
 
-  ## Optimize Images
-    * name: gulp-tinypng
-    * url: https://www.npmjs.com/package/gulp-tinypng
+## Optimize Images
+* name: gulp-tinypng
+* url: https://www.npmjs.com/package/gulp-tinypng
 
-    * name: gulp-imagemin
-    * url: https://www.npmjs.com/package/gulp-imagemin
+* name: gulp-imagemin
+* url: https://www.npmjs.com/package/gulp-imagemin
 
-  ## Minify CSS
-    * name: gulp-clean-css
-    * url: https://github.com/scniro/gulp-clean-css
+## Minify CSS
+* name: gulp-clean-css
+* url: https://github.com/scniro/gulp-clean-css
 
-  ## Minify JS
-    * name: gulp-minify
-    * url: https://www.npmjs.com/package/gulp-minify
+## Minify JS
+* name: gulp-minify
+* url: https://www.npmjs.com/package/gulp-minify
 
 
 #Course Note
